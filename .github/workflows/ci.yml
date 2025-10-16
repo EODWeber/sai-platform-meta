@@ -22,7 +22,7 @@ jobs:
         run: |
           ruff check .
           bandit -r . || true
-      # TODO: Tighen tests
+      # TODO: Tighten tests
       - name: Test
         run: |
           pytest -q || true
