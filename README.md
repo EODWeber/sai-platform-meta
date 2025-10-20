@@ -16,21 +16,8 @@ The Secure AI Platform is an **evolving modular system** spanning the entire AI 
 
 > **data → model → API → agent → CI/CD → observability → security**
 
-Each component lives in its own repository under the `sai-` prefix.
-
-| Domain         | Repository                                            | Purpose                                    |
-| -------------- | ----------------------------------------------------- | ------------------------------------------ |
-| Foundation     | [sai-infra-local](../sai-infra-local)                 | Local Docker/K8s infrastructure stack      |
-| Observability  | [sai-observability-stack](../sai-observability-stack) | OpenTelemetry → Loki/Grafana stack         |
-| Secrets        | [sai-secrets-vault](../sai-secrets-vault)             | HashiCorp Vault baseline for secrets       |
-| ML Foundations | [sai-ml-foundations](../sai-ml-foundations)           | Reproducible ML pipelines and datasets     |
-| Inference      | [sai-inference-api](../sai-inference-api)             | Secure FastAPI inference service           |
-| Agent          | [sai-agent-secops](../sai-agent-secops)               | Secure LangChain automation agent          |
-| Adversarial    | [sai-adversarial-lab](../sai-adversarial-lab)         | AI red teaming and adversarial ML          |
-| MLOps          | [sai-mlops-pipeline](../sai-mlops-pipeline)           | Model registry, CI/CD, SBOMs, OPA policies |
-
-📘 **Reference:**
-See [`/docs/index.md`](./docs/index.md) for the full **program specification and architecture overview**.
+📘 **Full Platform Definition:**
+See [Architecture Overview](./docs/architecture/PLATFORM_OVERVIEW.md) for detailed module and repository definitions.
 
 ## Quickstart
 
