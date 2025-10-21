@@ -1,3 +1,3 @@
 # Tech Placeholder
 
-TODO: Complete tech overview
+<!-- TODO: Complete tech overview -->
