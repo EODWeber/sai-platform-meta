@@ -4,7 +4,7 @@ Architectural definition of all modules, repos, and interconnections.
 
 ## Platform Vision & Goals
 
-The **Secure AI Platform (SAI Platform)** is a modular, producction-style ecosystem designed to demonstrate **secure-by-design AI engineering** across the full lifecycle of machine learning and large language model systems.
+The **Secure AI Platform (SAI Platform)** is a modular, production-style ecosystem designed to demonstrate **secure-by-design AI engineering** across the full lifecycle of machine learning and large language model systems.
 
 > **Vision:** To build a reference architecture that unifies, AI, security, and operations, showcasing how a Staff/Principal-level AI Security Engineer would design, deploy, and defend an AI-driven platform.
 
