@@ -23,8 +23,8 @@ The platform supports two local runtime options:
 - **Docker Compose (default):** Fastest way to run everything on one machine. Recommended for development and demos.
 - **Kubernetes (optional):** Used selectively for supporting infrastructure and lightweight services (dashboards, web UIs, proxies, collectors). This helps practice real-world deployment patterns (namespaces, RBAC, network policies) without moving GPU-heavy model workloads into the cluster.
 
-> [!NOTE] Hardware Constraints
-> AI model training and inference will not run in Kubernetes in this project due to hardware constraints. Models run locally or in containers outside the cluster. K8s is used to host peripheral services like Grafana, Loki, Caddy, MLflow UI, or the OTel collector where appropriate. In my specific environment, I have a dedicated gaming workstation which can handle these workloads.
+!!! note "Hardware Constraints"
+    AI model training and inference will not run in Kubernetes in this project due to hardware constraints. Models run locally or in containers outside the cluster. K8s is used to host peripheral services like Grafana, Loki, Caddy, MLflow UI, or the OTel collector where appropriate. In my specific environment, I have a dedicated gaming workstation which can handle these workloads.
 
 ### Navigating the Platform
 
