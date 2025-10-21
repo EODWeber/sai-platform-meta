@@ -24,11 +24,22 @@ See [Architecture Overview](./docs/architecture/PLATFORM_OVERVIEW.md) for detail
 Clone this repo and bootstrap the shared developer environment.
 
 ```bash
-git clone https://github.com/<your-username>/sai-platform-meta.git
+git clone https://github.com/EODWeber/sai-platform-meta.git
 cd sai-platform-meta
+
+# Set up local environment (Python-only; creates .venv/)
 make setup
+
+# Optional: run hooks across the repo once
+. .venv/bin/activate
 pre-commit run -a
+
+# Serve docs locally
+make docs
 ```
+
+> Note: Activating the venv (`source .venv/bin/activate`) is optional if you call tools via `$(VENV)/bin/...` in Make targets, but most folks like the shell activation for ad-hoc commands.
+
 
 ### Using the scaffolds
 

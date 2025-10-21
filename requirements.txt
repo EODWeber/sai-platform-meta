@@ -1,3 +1,12 @@
+pre-commit
+
 ruff
 bandit
 pytest
+mkdocs
+mkdocs-material
+mkdocs-git-revision-date-localized-plugin
+pymdown-extensions
+
+# optional but handy as a standalone CLI in addition to the pre-commit hook
+detect-secrets

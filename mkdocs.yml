@@ -1,0 +1,77 @@
+site_name: Secure AI Platform Docs
+site_url: https://eodweber.github.io/sai-platform-meta
+repo_name: EODWeber/sai-platform-meta
+repo_url: https://github.com/eodweber/sai-platform-meta
+
+theme:
+  name: material
+  features:
+    - navigation.tabs         # top nav tabs
+    - navigation.tabs.sticky  # sticky top nav tabs
+    - navigation.top          # keep tabs at top
+    - navigation.sections     # group sidebar by section
+    - navigation.indexes      # support "index" pages for sections
+    - navigation.expand       # auto-expand current section in sidebar
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - pymdownx.superfences
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.arithmatex
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+
+nav:
+  - Home: INDEX.md
+  - Narrative:
+    - Overview: narrative/index.md
+    - Platform Story: narrative/PLATFORM_STORY.md
+    - Module Stories:
+      - Platform Meta: narrative/sai-platform-meta/MODULE_STORY.md
+  - Architecture:
+    - Overview: architecture/PLATFORM_OVERVIEW.md
+    - Threat Model: architecture/THREAT_MODEL.md
+  - Tech:
+    - Overview: tech/index.md
