@@ -1,149 +1,116 @@
-# 🧭 Secure AI Platform — Program Specification
+# Secure AI Platform – Meta Repository
 
-Owner: Jeff Weber
-Version: 1.0 (Foundations)
-Last Updated: October 2025
+Welcome to the **Secure AI Platform (SAI Platform)** documentation hub.
+This site is powered by **MkDocs** and serves as the single source of truth for all documentation, architecture, and governance resources that guide the Secure AI Platform project.
 
-⸻
+## 🌐 Overview
 
-## Overview
+The Secure AI Platform is an open-source initiative that demonstrates how to **build, deploy, and secure AI systems** in a real-world, production-style environment.
+It combines modern MLOps practices with DevSecOps principles to showcase the **secure design of AI infrastructure, APIs, and agents**.
 
-The Secure AI Platform is a modular, production-grade framework designed to demonstrate secure-by-design AI engineering across the full machine-learning lifecycle:
+This repository — `sai-platform-meta` — acts as the **governance and documentation layer** of the entire platform. It defines how each module is built, tested, secured, and documented.
 
-> data → model → API → agent → CI/CD → observability → security
+## 🧭 What You’ll Find Here
 
-This document is the single source of truth for the program’s architecture, components, toolchain, and development standards.
+| Category                  | Description                                                                   |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| **Architecture**          | High-level platform designs, diagrams, and specifications.                    |
+| **Narrative**             | Plain-language explanations, project stories, and educational write-ups.      |
+| **Technical**             | In-depth engineering references, configuration notes, and security baselines. |
+| **Workflows & Templates** | Shared GitHub Actions, issue templates, and contribution standards.           |
 
-## Objectives
-- Build a portfolio-grade reference platform showing end-to-end secure AI practices.
-- Demonstrate technical mastery of MLOps, DevSecOps, and AI security engineering.
-- Provide reusable scaffolds, policies, and automation patterns for secure AI delivery.
-- Maintain open, self-contained repositories for each functional component.
+## 🧩 Platform Modules
 
-## Logical Architecture
+Each major component of the Secure AI Platform lives in its own repository and integrates through shared standards defined here.
 
-### Core Flows
+| Module                  | Purpose                                                              |
+| ----------------------- | -------------------------------------------------------------------- |
+| **sai-platform-meta**   | Central documentation, governance, CI/CD templates.                  |
+| **sai-platform-infra**  | Local and cluster infrastructure (Vault, Loki, Grafana, OTel, etc.). |
+| **sai-ml-foundations**  | Machine learning pipelines and experiment tracking.                  |
+| **sai-inference-api**   | Secure model serving API with JWT and RBAC.                          |
+| **sai-agent-secops**    | Secure AI agents and automation for SOC workflows.                   |
+| **sai-adversarial-lab** | Adversarial testing, red teaming, and model robustness validation.   |
+| **sai-mlops-pipeline**  | Central CI/CD, scanning, and signing pipelines.                      |
 
-| Flow                  | Description                                                                          |
-| --------------------- | ------------------------------------------------------------------------------------ |
-| Dev / Train           | Reproducible ML pipelines (PyTorch / Sklearn) → metrics + artifacts logged to MLflow |
-| Serve                 | Secure inference API (FastAPI + JWT + RBAC) → models pulled from registry            |
-| Agent                 | LangChain service with restricted tool use, Vault-backed secrets, and audit logging  |
-| Security & Compliance | CI → SBOM → scan → sign → OPA policy → release                                       |
-| Observability         | OpenTelemetry traces/logs/metrics → Loki / Grafana dashboards                        |
-| Secrets & Data        | Vault issues short-lived credentials; dataset cards define provenance & use policy   |
+> For an architectural overview of how these modules connect, see
+> [Platform Overview](architecture/PLATFORM_OVERVIEW.md).
 
-### Trust Boundaries
-- Public client ↔ API/Agent gateways
-- Services ↔ Model registry / data store
-- CI/CD runners ↔ Artifact registries
-- Vault as single source of secret truth
+## ⚙️ Getting Started Locally
 
-## Components
+You can set up the local environment entirely with Python — no system-level dependencies required.
 
-| Repo                    | Purpose                               | Core Tech                                    |
-| ----------------------- | ------------------------------------- | -------------------------------------------- |
-| sai-platform-meta       | Program docs, scaffolds, CI templates | Markdown / MkDocs / GitHub Actions           |
-| sai-infra-local         | Local deployment stack                | Docker Compose / Caddy / Make                |
-| sai-observability-stack | Logging + metrics + tracing           | OpenTelemetry / Loki / Grafana               |
-| sai-secrets-vault       | Secrets management                    | HashiCorp Vault                              |
-| sai-ml-foundations      | ML pipelines & datasets               | PyTorch / scikit-learn / MLflow              |
-| sai-inference-api       | Secure model serving                  | FastAPI / Uvicorn / JWT                      |
-| sai-agent-secops        | Secure automation agent               | LangChain / Vault / RBAC                     |
-| sai-adversarial-lab     | AI red-team testing                   | Adversarial ML Toolbox / PyTorch             |
-| sai-mlops-pipeline      | CI/CD + policy gates                  | GitHub Actions / Syft / Trivy / Cosign / OPA |
+```bash
+# Clone the repository
+git clone https://github.com/EODWeber/sai-platform-meta.git
+cd sai-platform-meta
 
-Each repo is independent yet interoperable through shared CI/CD, telemetry, and security standards.
+# Set up local virtual environment and dependencies
+make setup
 
-## Tool Inventory
+# Run all pre-commit checks
+. .venv/bin/activate
+pre-commit run -a
 
-| Category      | Tool                              | Purpose / Usage                   |
-| ------------- | --------------------------------- | --------------------------------- |
-| ML / AI       | PyTorch                           | Model training / evaluation       |
-|               | scikit-learn                      | Baselines & preprocessing         |
-|               | LangChain                         | Agent orchestration & tool safety |
-| Infra / API   | FastAPI + Pydantic                | Secure serving / validation       |
-|               | Docker / Compose                  | Containerized deployment          |
-|               | MLflow                            | Model tracking / registry         |
-| Security      | Trivy / Grype                     | Image & dependency scanning       |
-|               | Syft / Cosign                     | SBOM + signing                    |
-|               | OPA / Conftest                    | Policy-as-code CI gates           |
-|               | HashiCorp Vault                   | Secrets & short-lived creds       |
-|               | Bandit / Semgrep / detect-secrets | SAST & secret detection           |
-| Observability | OpenTelemetry                     | Unified telemetry SDK             |
-|               | Loki / Grafana                    | Logs & dashboards                 |
-| Automation    | GitHub Actions + GHAS             | CI/CD + code scanning             |
-| Dev UX        | Make / pre-commit / ruff          | Consistent local workflow         |
-
-
-## Governance & Standards
-
-- Branching: Trunk-based with short feature branches
-- Commits: Conventional commits; signed commits optional
-- CI/CD:
-  1. Lint & test
-  2.	Generate SBOM (Syft)
-  3.	Scan (Trivy)
-  4.	Policy gate (OPA)
-  5.	Sign (Cosign)
-  6.	Release (tag & publish)
-- Security Baseline:
-- JWT + RBAC auth
-- Vault for secrets
-- TLS enforced
-- No plaintext secrets or .env files
-- CodeQL + Dependabot active
-- Definition of Done: CI green, zero unwaived High/Critical, docs updated, runbook present.
-
-## Documentation Model
-
-Each repo contains:
-
-```
-/docs/
-  tech/          → authoritative specs, threat models, runbooks
-  narrative/     → learning notes, articles, retrospectives
+# Serve documentation locally
+make docs
 ```
 
-Program-level docs (like this one) live in sai-platform-meta.
+When you’re ready, open `http://127.0.0.1:8000` in your browser to explore the site.
 
-## Roadmap (High Level)
+## 🛠 Documentation Structure
 
-| Phase                  | Focus                           | Deliverables                      |
-| ---------------------- | ------------------------------- | --------------------------------- |
-| 0. Foundation          | Organization + infra setup      | Meta repo, Notion system, base CI |
-| 1. ML Foundations      | PyTorch pipeline + MLflow       | Reproducible training & metrics   |
-| 2. Applied Engineering | Secure API + LangChain agent    | Auth / RBAC / logging             |
-| 3. AI Security         | Adversarial lab + threat models | Attack sims + defense patterns    |
-| 4. Secure MLOps        | Registry + CI/CD policy gates   | SBOM, signing, OPA gates          |
-| 5. AI for SOC          | LLM log triage bot              | SOC automation prototype          |
-| 6. Leadership          | Architecture & blueprint        | Whitepaper + talk                 |
+```
+docs/
+├── index.md                 # You are here
+├── architecture/            # Technical structure and diagrams
+│   └── PLATFORM_OVERVIEW.md
+├── narrative/               # Project stories and accessible explanations
+│   ├── PLATFORM_STORY.md
+│   └── REPO_STORY.md
+└── tech/                    # Deep dives, baselines, and configuration notes
+```
 
+Each section can be read independently, or as part of the full story:
 
-## Risks & Mitigations
+- Start with Platform Story for an accessible overview.
+- Explore Architecture Overview for technical depth.
+- Drill down into module-specific docs as they’re added.
 
-| Risk              | Impact | Mitigation                               |
-| ----------------- | ------ | ---------------------------------------- |
-| Time variability  | Medium | Use Kanban WIP limits + small tasks      |
-| GPU/driver issues | Medium | Containerized CUDA stack + CPU fallbacks |
-| Scope creep       | High   | Explicit non-goals per repo              |
-| Secret exposure   | High   | Vault from day 1 + detect-secrets        |
-| Tool sprawl       | Medium | Shared Makefile + base images            |
+## 🧱 Building and Publishing Docs
 
-## Success Criteria
-- ✅ Every repo passes CI & policy gates
-- ✅ 100 % images signed and SBOM-tracked
-- ✅ Telemetry active in all services
-- ✅ Public deliverable per phase (repo + article + artifact)
-- ✅ Security posture measurable (0 High/Critical)
+This site is built with MkDocs Material.
 
-## References
-- MITRE ATLAS Framework
-- OWASP Top 10 for LLMs
-- OpenTelemetry Spec
-- NIST AI RMF 1.0
+```bash
+# Serve locally
+make docs
 
-## License
+# Build static site
+.venv/bin/mkdocs build
+```
 
-© 2025 Jeff Weber · Secure AI Platform Program.
-All content licensed under Apache 2.0.
+Docs are published automatically through GitHub Actions to:
+
+```bash
+https://<your-username>.github.io/sai-platform-meta/
+```
+
+> If you’re contributing or running locally, the only requirement is **Python 3.11+**.
+
+## 🧩 Contributing
+
+This project follows a security-first and open documentation model.
+Before submitting changes:
+
+1. Run pre-commit run -a to lint and scan your code.
+2. Ensure documentation follows the existing format and voice.
+3. Include or update relevant architecture diagrams when adding new modules or workflows.
+
+## 🧠 Learn More
+
+- Platform Story – High-level explanation in plain language.
+- Architecture Overview – System structure and relationships.
+- Meta Repo Story – Why this repository exists and how to use it.
+
+Secure AI Platform (SAI Platform)
+© 2025 Jeff Weber — Licensed under Apache 2.0
