@@ -16,7 +16,6 @@ theme:
     - search.highlight
     - search.suggest
     - content.code.copy
-    - pymdownx.superfences
   palette:
 
     # Palette toggle for light mode
@@ -67,11 +66,11 @@ nav:
   - Home: INDEX.md
   - Narrative:
     - Overview: narrative/index.md
-    - Platform Story: narrative/PLATFORM_STORY.md
+    - Platform Story: narrative/platform_story.md
     - Module Stories:
-      - Platform Meta: narrative/sai-platform-meta/MODULE_STORY.md
+      - Platform Meta: narrative/sai-platform-meta/module_story.md
   - Architecture:
-    - Overview: architecture/PLATFORM_OVERVIEW.md
-    - Threat Model: architecture/THREAT_MODEL.md
+    - Overview: architecture/platform_overview.md
+    - Threat Model: architecture/threat_model.md
   - Tech:
     - Overview: tech/index.md
