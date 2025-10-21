@@ -5,6 +5,8 @@
 [![Project Board](https://img.shields.io/badge/Project%20Board-Secure%20AI%20Platform-9cf?logo=github)](https://github.com/users/EODWeber/projects/4)
 [![Security Scans](https://img.shields.io/badge/Security%20Checks-GHAS%20Enabled-success?logo=github)](https://github.com/EODWeber/sai-platform-meta/security)
 
+**[Documentation (via MkDocs)](https://eodweber.github.io/sai-platform-meta/)**
+
 ## What is this?
 
 This repository serves as the **program index, governance source, and documentation hub** for the **Secure AI Platform** — a modular, production-grade framework for building, securing, and operating AI systems end-to-end.
@@ -71,27 +73,6 @@ The [sai-observability-stack](../sai-observability-stack) repo provides a local 
 * **Traces:** visualize end-to-end request flow
 * **Metrics:** measure latency, throughput, and errors
 * **Logs:** centralized, structured logs with contextual metadata
-
-## Status & Roadmap
-
-### 🟢 Active Phase — Foundation Setup
-
-* [x] Define project charter and program spec
-* [x] Create Notion tracking system
-* [x] Generate scaffolds, CI templates, and policies
-* [ ] Initialize component repositories
-* [ ] Validate CI and branch protections
-* [ ] Publish “Day 1” foundation blog post
-
-### 🔜 Upcoming Phases
-
-* [ ] ML Foundations — reproducible training pipelines (`sai-ml-foundations`)
-* [ ] Secure Inference API (`sai-inference-api`)
-* [ ] Secure Agent (`sai-agent-secops`)
-* [ ] Adversarial Lab (`sai-adversarial-lab`)
-* [ ] Secure MLOps Pipeline (`sai-mlops-pipeline`)
-
-📅 See [`/docs/index.md`](./docs/index.md) for the full roadmap and deliverables.
 
 ## License
 
