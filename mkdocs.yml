@@ -63,7 +63,7 @@ plugins:
       fallback_to_build_date: true
 
 nav:
-  - Home: INDEX.md
+  - Home: index.md
   - Narrative:
     - Overview: narrative/index.md
     - Platform Story: narrative/platform_story.md
