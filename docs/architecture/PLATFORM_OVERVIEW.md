@@ -24,7 +24,7 @@ The **Secure AI Platform (SAI Platform)** is a modular, producction-style ecosys
 
 | **Module**                 | **Purpose**                                                   | **Key Tech**                                                | **Repository**        |
 | -------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------- | --------------------- |
-| Documentation & Governance | PRogram specifications, architecture, standards, and policies | Markdown, GitHub Actions, MkDocs                            | `sai-platform-meta`   |
+| Documentation & Governance | Program specifications, architecture, standards, and policies | Markdown, GitHub Actions, MkDocs                            | `sai-platform-meta`   |
 | Platform Infrastructure    | Unified infrastructure: Vault, Caddy, Loki, Grafana, MLflow   | Docker Compose, Vault, Caddy, Grafana, Loki, OTel           | `sai-platform-infra`  |
 | ML Foundations             | Core machine learning pipelines and datasets                  | PyTorch, scikit-learn, MLflow                               | `sai-ml-foundations`  |
 | Inference API              | Secure model-serving API with JWT + RBAC                      | FastAPI, Pydantic, PyTorch, MLflow SDK                      | `sai-inference-api`   |
