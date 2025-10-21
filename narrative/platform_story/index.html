@@ -1,0 +1,1537 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://eodweber.github.io/sai-platform-meta/narrative/platform_story/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../sai-platform-meta/module_story/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Platform Story - Secure AI Platform Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#secure-ai-platform" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Secure AI Platform Docs" class="md-header__button md-logo" aria-label="Secure AI Platform Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Secure AI Platform Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Platform Story
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/eodweber/sai-platform-meta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    EODWeber/sai-platform-meta
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Narrative
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../architecture/platform_overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tech/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tech
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Secure AI Platform Docs" class="md-nav__button md-logo" aria-label="Secure AI Platform Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Secure AI Platform Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/eodweber/sai-platform-meta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    EODWeber/sai-platform-meta
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Narrative
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Narrative
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Platform Story
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Platform Story
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Platform
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-and-learning-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation and Learning Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-options-docker-compose-and-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Runtime Options: Docker Compose and Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigating-the-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating the Platform
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-1-platform-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 1 - Platform Infrastructure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 1 - Platform Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-2-ml-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 2 - ML Foundations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 2 - ML Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-3-inference-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 3 - Inference API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 3 - Inference API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-4-agent-secops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 4 - Agent SecOps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 4 - Agent SecOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-5-adversarial-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 5 - Adversarial Lab
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 5 - Adversarial Lab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-6-mlops-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 6 – MLOps Pipeline
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 6 – MLOps Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glossary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Module Stories
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Module Stories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sai-platform-meta/module_story/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Platform Meta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/platform_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/threat_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Threat Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tech/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Tech
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Tech
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Platform
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-and-learning-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation and Learning Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-options-docker-compose-and-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Runtime Options: Docker Compose and Kubernetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigating-the-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigating the Platform
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-1-platform-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 1 - Platform Infrastructure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 1 - Platform Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-2-ml-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 2 - ML Foundations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 2 - ML Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-3-inference-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 3 - Inference API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 3 - Inference API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-4-agent-secops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 4 - Agent SecOps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 4 - Agent SecOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-5-adversarial-lab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 5 - Adversarial Lab
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 5 - Adversarial Lab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-6-mlops-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module 6 – MLOps Pipeline
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Module 6 – MLOps Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technologies-and-implementation_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technologies and Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-level-steps_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-Level Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glossary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="secure-ai-platform">Secure AI Platform<a class="headerlink" href="#secure-ai-platform" title="Permanent link">&para;</a></h1>
+<p>The Secure AI Platform is a hands-on project that explores how to design, build, and operate artificial intelligence systems securely. It focuses on both the technical and practical sides of AI engineering—from creating models and APIs to securing the infrastructure, monitoring performance, and defending against attacks. The platform is organized into focused modules that each represent a piece of the full AI security lifecycle.</p>
+<p>The goal is simple: to show how AI systems can be made trustworthy, resilient, and transparent by combining machine learning engineering with security best practices. Each part of the project builds on the others, creating a realistic example of what a secure AI platform might look like in production.</p>
+<h2 id="understanding-the-platform">Understanding the Platform<a class="headerlink" href="#understanding-the-platform" title="Permanent link">&para;</a></h2>
+<p>The Secure AI Platform is designed as a collection of smaller projects that connect to form one complete system. Each module focuses on a specific part of building, deploying, or securing AI systems, from the foundation infrastructure to automated security testing and continuous delivery.</p>
+<p>Together, these modules form an educational yet realistic framework that mirrors what you might see in a professional environment. The repositories are modular so that each can be explored, developed, or deployed independently, yet they all integrate to demonstrate the full lifecycle of secure AI engineering.</p>
+<h3 id="documentation-and-learning-strategy">Documentation and Learning Strategy<a class="headerlink" href="#documentation-and-learning-strategy" title="Permanent link">&para;</a></h3>
+<p>Documentation is a key part of this platform. Each module includes its own technical notes, security considerations, and implementation guides, written in a way that reflects real engineering processes. Over time, these will evolve into deeper guides, runbooks, and case studies.</p>
+<p>Alongside the technical documentation, narrative write-ups and social posts will share the learning journey, design decisions, and practical lessons from each stage. These posts will align with milestones, for example, completing a module or demonstrating a new capability.</p>
+<h3 id="runtime-options-docker-compose-and-kubernetes">Runtime Options: Docker Compose and Kubernetes<a class="headerlink" href="#runtime-options-docker-compose-and-kubernetes" title="Permanent link">&para;</a></h3>
+<p>The platform supports two local runtime options:</p>
+<ul>
+<li><strong>Docker Compose (default):</strong> Fastest way to run everything on one machine. Recommended for development and demos.</li>
+<li><strong>Kubernetes (optional):</strong> Used selectively for supporting infrastructure and lightweight services (dashboards, web UIs, proxies, collectors). This helps practice real-world deployment patterns (namespaces, RBAC, network policies) without moving GPU-heavy model workloads into the cluster.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Hardware Constraints</p>
+<p>AI model training and inference will not run in Kubernetes in this project due to hardware constraints. Models run locally or in containers outside the cluster. K8s is used to host peripheral services like Grafana, Loki, Caddy, MLflow UI, or the OTel collector where appropriate. In my specific environment, I have a dedicated gaming workstation which can handle these workloads.</p>
+</div>
+<h3 id="navigating-the-platform">Navigating the Platform<a class="headerlink" href="#navigating-the-platform" title="Permanent link">&para;</a></h3>
+<p>Start with the <code>sai-platform-meta</code> repository to understand the architecture, roadmap, and documentation structure.</p>
+<p>Visit each module repository to see its specific purpose and implementation. You'll find a <code>README.md</code> file to get started. Each README will contain quickstart steps, goals, and references related to modules.</p>
+<p>Follow the documentation folders (<code>/docs/</code>) within the <code>sai-platform-meta</code> repo for technical details, and the <code>/narrative/</code> folder for story-based updates.</p>
+<h2 id="module-1-platform-infrastructure">Module 1 - Platform Infrastructure<a class="headerlink" href="#module-1-platform-infrastructure" title="Permanent link">&para;</a></h2>
+<p>The Platform Infrastructure module provides the foundation for the entire system. It contains the core services that everything else depends on: secrets management, logging, monitoring, and proxying.</p>
+<p>Use open-source tools in containers to simulate a production environment. <strong>Docker Compose</strong> is the default deployment mechanism, useful for quickly deploying in development. <strong>Kubernetes</strong> is optionally used to deploy lightweight services (Grafana/Loki dashboards, OTel collector, MLflow UI, Caddy) to practice cluster concepts such as namespaces, service accounts, and network policies. Kubernetes is perfect for production simulation and running services for lab use. <strong>Models do not run in the cluster.</strong></p>
+<h3 id="technologies-and-implementation">Technologies and Implementation<a class="headerlink" href="#technologies-and-implementation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Vault:</strong> Secure storage for API keys, tokens, and credentials.</li>
+<li><strong>Caddy:</strong> Local web server and reverse proxy.</li>
+<li><strong>Grafana and Loki:</strong> Dashboards and logs for system visibility.</li>
+<li><strong>OpenTelemetry:</strong> Collects metrics and traces from services.</li>
+<li><strong>Docker Compose:</strong> Defines, runs, and manages all local containers.</li>
+<li><strong>Kubernetes:</strong> Defines, runs, and manages all production simulated containers.</li>
+</ul>
+<h3 id="high-level-steps">High-Level Steps<a class="headerlink" href="#high-level-steps" title="Permanent link">&para;</a></h3>
+<p><strong>Compose path (default):</strong></p>
+<ol>
+<li>Start local infrastructure with <code>make up</code>.</li>
+<li>Enable profiles for observability, secrets, or registry.</li>
+<li>Use Vault to store credentials safely.</li>
+<li>View logs and metrics in Grafana.</li>
+<li>Expand or tear down the environment as needed.</li>
+</ol>
+<p><strong>Kubernetes path (optional):</strong></p>
+<ol>
+<li>Create a local cluster (e.g., <code>kind</code> or <code>k3d</code>).</li>
+<li>Apply base manifests/overlays for Grafana, Loki, OTel, MLflow UI, or Caddy.</li>
+<li>Use port-forward or Ingress to access web UIs.</li>
+<li>Keep models running outside K8s; only UIs/collectors/proxies run in the cluster.</li>
+</ol>
+<h2 id="module-2-ml-foundations">Module 2 - ML Foundations<a class="headerlink" href="#module-2-ml-foundations" title="Permanent link">&para;</a></h2>
+<p>The ML (Machine Learning) Foundations module is where models are built and trained. It demonstrates how data and code flow together to produce machine learning models that can be reused and served securely.</p>
+<p>The focus is on reproducibility and responsible model development. Each experiment is tracked, and datasets include documentation on where the data came from and how it can be used.</p>
+<h3 id="technologies-and-implementation_1">Technologies and Implementation<a class="headerlink" href="#technologies-and-implementation_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>PyTorch and scikit-learn:</strong> Core frameworks for model training and evaluation.</li>
+<li><strong>MLflow:</strong> Tracks experiments, metrics, and artifacts.</li>
+<li><strong>Python CLI:</strong> Runs training and evaluation pipelines.</li>
+<li><strong>Data Cards:</strong> Document dataset provenance and licensing.</li>
+</ul>
+<h3 id="high-level-steps_1">High-Level Steps<a class="headerlink" href="#high-level-steps_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Prepare data and preprocessing scripts.</li>
+<li>Train models using reproducible pipelines.</li>
+<li>Log results and artifacts to MLflow.</li>
+<li>Register the model for future serving.</li>
+</ol>
+<h2 id="module-3-inference-api">Module 3 - Inference API<a class="headerlink" href="#module-3-inference-api" title="Permanent link">&para;</a></h2>
+<p>The Inference API module provides a secure way to serve trained models. It exposes an HTTP API that accepts input, runs predictions, and returns results while enforcing authentication and authorization.</p>
+<p>All requests to the API are authenticated with JSON Web Tokens (JWT), and actions are restricted using role-based access control (RBAC). Every inference request is logged with a trace ID for auditing.</p>
+<h3 id="technologies-and-implementation_2">Technologies and Implementation<a class="headerlink" href="#technologies-and-implementation_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>FastAPI:</strong> Lightweight web framework for building APIs.</li>
+<li><strong>Pydantic:</strong> Input validation and type safety.</li>
+<li><strong>JWT and RBAC:</strong> User authentication and permission enforcement.</li>
+<li><strong>OpenTelemetry:</strong> Trace requests end-to-end.</li>
+</ul>
+<h3 id="high-level-steps_2">High-Level Steps<a class="headerlink" href="#high-level-steps_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Load a trained model from the MLflow registry.</li>
+<li>Validate incoming requests and tokens.</li>
+<li>Run predictions and return results.</li>
+<li>Record latency and usage metrics.</li>
+</ol>
+<h2 id="module-4-agent-secops">Module 4 - Agent SecOps<a class="headerlink" href="#module-4-agent-secops" title="Permanent link">&para;</a></h2>
+<p>The Agent SecOps module focuses on AI agents, automations built using large language models (LLMs). It explores how to control what agents can do, what data they can access, and how to audit their behavior.</p>
+<p>Each agent operates under a defined set of tools and permissions. Prompts and outputs are filtered for sensitive content, and every action is logged. Secrets are injected securely from Vault instead of stored locally.</p>
+<h3 id="technologies-and-implementation_3">Technologies and Implementation<a class="headerlink" href="#technologies-and-implementation_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>LangChain:</strong> Framework for building language-based agents.</li>
+<li><strong>FastAPI:</strong> Provides an API interface for agent tasks.</li>
+<li><strong>Vault:</strong> Supplies short-lived secrets.</li>
+<li><strong>Guardrails / Regex Filters:</strong> Protect against prompt injections and data leaks.</li>
+<li><strong>Audit Logging:</strong> Tracks prompt, tool, and output data.</li>
+</ul>
+<h3 id="high-level-steps_3">High-Level Steps<a class="headerlink" href="#high-level-steps_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Define allowed tools and permissions.</li>
+<li>Create prompts and safety filters.</li>
+<li>Securely load secrets at runtime.</li>
+<li>Monitor agent activity and results.</li>
+</ol>
+<h2 id="module-5-adversarial-lab">Module 5 - Adversarial Lab<a class="headerlink" href="#module-5-adversarial-lab" title="Permanent link">&para;</a></h2>
+<p>The Adversarial Lab module tests the security of AI systems by simulating attacks. This helps identify weaknesses in models and defenses before real attackers can exploit them.</p>
+<p>Tests include adversarial inputs, data poisoning, and prompt injection attempts. Results are measured, recorded, and compared to baselines to show how defenses perform.</p>
+<h3 id="technologies-and-implementation_4">Technologies and Implementation<a class="headerlink" href="#technologies-and-implementation_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Adversarial Robustness Toolbox (ART):</strong> Generates model attacks.</li>
+<li><strong>LangChain Red Team Tools:</strong> Tests agent vulnerabilities.</li>
+<li><strong>Python and PyTorch:</strong> Custom scripts for experiments.</li>
+</ul>
+<h3 id="high-level-steps_4">High-Level Steps<a class="headerlink" href="#high-level-steps_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Select a target model or agent.</li>
+<li>Run configured attack scenarios.</li>
+<li>Capture and evaluate results.</li>
+<li>Adjust defenses and retest.</li>
+</ol>
+<h2 id="module-6-mlops-pipeline">Module 6 – MLOps Pipeline<a class="headerlink" href="#module-6-mlops-pipeline" title="Permanent link">&para;</a></h2>
+<p>The MLOps Pipeline module ties everything together with automation. It manages continuous integration (CI) and continuous delivery (CD) pipelines that check, scan, and release code securely.</p>
+<p>Automate security and compliance checks for every change. Pipelines can target Compose deployments for quick smoke tests and Kubernetes overlays for environment-style testing of lightweight services (dashboards, proxies, collectors). GPU-heavy model jobs are excluded from K8s in this project and will be run on a dedicated workstation. The documentation may target my specific environment.</p>
+<h3 id="technologies-and-implementation_5">Technologies and Implementation<a class="headerlink" href="#technologies-and-implementation_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>GitHub Actions:</strong> Automates builds, tests, and deployments.</li>
+<li><strong>Trivy and Syft:</strong> Scan images and create software bills of materials (SBOMs).</li>
+<li><strong>Cosign:</strong> Signs and verifies releases.</li>
+<li><strong>Open Policy Agent (OPA):</strong> Defines and enforces security policies.</li>
+</ul>
+<h3 id="high-level-steps_5">High-Level Steps<a class="headerlink" href="#high-level-steps_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Run tests and code quality checks.</li>
+<li>Generate SBOMs for transparency.</li>
+<li>Scan dependencies for vulnerabilities.</li>
+<li>Sign and publish verified releases.</li>
+</ol>
+<h2 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h2>
+<p><strong>AI Agent:</strong> A program that uses language models or AI logic to complete complex tasks automatically.</p>
+<p><strong>Adversarial Attack:</strong> A method of tricking AI systems with carefully crafted inputs.</p>
+<p><strong>Audit Logging:</strong> Recording detailed information about system actions for review.</p>
+<p><strong>Docker Compose:</strong> A tool for defining and running multi-container Docker applications.</p>
+<p><strong>FastAPI:</strong> A framework for building high-performance APIs in Python.</p>
+<p><strong>LangChain:</strong> A framework for building applications powered by language models.</p>
+<p><strong>Machine Learning (ML):</strong> A field of AI that enables computers to learn from data.</p>
+<p><strong>MLOps:</strong> Practices for managing machine learning lifecycle processes such as training, deployment, and monitoring.</p>
+<p><strong>OpenTelemetry (OTel):</strong> A standard for collecting logs, metrics, and traces from systems.</p>
+<p><strong>RBAC:</strong> Role-Based Access Control, used to restrict actions to specific users or roles.</p>
+<p><strong>Vault:</strong> A secrets management system that stores and protects sensitive data.</p>
+<p>This document serves as the accessible guide for the Secure AI Platform, a project that brings together security, operations, and artificial intelligence into one cohesive, educational framework.</p>
+<p>It explains not just what is being built, but why each component matters, and how every piece contributes to a secure, observable, and reproducible AI environment. The intention is to make this platform understandable to anyone curious about how AI systems can be responsibly engineered and secured from the ground up.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 21, 2025 04:30:54 UTC">October 21, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.expand", "navigation.instant", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
